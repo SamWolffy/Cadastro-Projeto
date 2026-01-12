@@ -1,53 +1,253 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro</title>
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="src/style.css"> -->
 </head>
 
 <body>
-    <main class="main">
+    <main id="content">
+        <div id="progressPage">
+            <div id="head">
+                <h1>Logo</h1>
+            </div>
 
-        <div class="imagemLado">
-            <img src="src/img/1bc28fabf3ba28fe658f1829b2e48345.jpg" alt="">
+            <div id="progress">
+                <form>
+                    <div class="step step-1 active">
+                        <h2>Step 1</h2>
+                        <h2>Personal information</h2>
+                        <p>Enter your personal information to get closer to your next pet!</p>
+
+
+                        <fieldset>
+                            <legend>Basic Details</legend>
+
+                            <label for="idName">Full name</label>
+                            <input type="text" name="name" id="idName" placeholder="Your full name" required>
+
+                            <label for="idAge">Age</label>
+                            <input type="number" name="age" id="idAge" placeholder="Your age" required>
+
+                            <label for="idEmail">Email</label>
+                            <input type="email" name="email" id="idEmail" placeholder="Your email">
+
+                            <label for="idAddress">Address</label>
+                            <input type="text" name="address" id="idAddress" placeholder="Your address">
+                        </fieldset>
+
+                    </div>
+
+                    <div class="step step-2">
+                        <h2>Step 2</h2>
+                        <h2>Your home</h2>
+                        <p>Tell us about your house.</p>
+
+
+                        <fieldset>
+                            <legend>House situation</legend>
+
+                            <div class="questions live">
+                                <p>Do you live alone or with others?</p>
+
+                                <label for="idAlone">
+                                    <input type="radio" name="live" id="idAlone" value="alone">
+                                    I live alone
+                                </label>
+
+
+                                <label for="idOthers">
+                                    <input type="radio" name="live" id="idOthers" value="others">
+                                    I live with others
+                                </label>
+
+                            </div>
+
+
+                            <div class="questions house">
+                                <p>Mora em casa ou apartamento?</p>
+
+
+                                <label>
+                                    <input type="radio" name="living" id="idHouse" value="house">
+                                    House
+                                </label>
+
+                                <label>
+                                    <input type="radio" name="living" id="idApartment" value="apartment">
+                                    Apartment
+                                </label>
+                            </div>
+
+                            <div id="yardBlock" class="conditional">
+                                <p>Do you have a yard?</p>
+
+                                <label>
+                                    <input type="radio" name="yard" value="yesYard">
+                                    Yes
+                                </label>
+
+                                <label>
+                                    <input type="radio" name="yard" value="noYard">
+                                    No
+                                </label>
+                            </div>
+
+                            <div class="questions protection conditional">
+                                <p>Do you have screens on the windows?</p>
+
+                                <label>
+                                    <input type="radio" name="screens" value="yesScreens">
+                                    Yes
+                                </label>
+
+                                <label>
+                                    <input type="radio" name="screens" value="noScreens">
+                                    No
+                                </label>
+                            </div>
+                        </fieldset>
+                    </div>
+
+                    <div class="step step-3">
+                        <h2>Step 3</h2>
+                        <h2>Pets preference</h2>
+                        <p>What about the pet?</p>
+
+                        <fieldset>
+                            <legend>Adoption expectations</legend>
+
+                            <div class="questions adoption">
+                                <p>What di you prefer?</p>
+
+                                <label>
+                                    <input type="radio" name="prefer" id="idCat" value="cat">
+                                    Cat
+                                </label>
+
+                                <label>
+                                    <input type="radio" name="prefer" id="idDog" value="dog">
+                                    Dog
+                                </label>
+                            </div>
+
+                            <div class="questions size conditional">
+                                <label>
+                                    <input type="radio" name="size" id="idSmall" value="small">
+                                    Small
+                                </label>
+
+                                <label>
+                                    <input type="radio" name="size" id="idMedium" value="medium">
+                                    Medium
+                                </label>
+
+                                <label>
+                                    <input type="radio" name="size" id="idLarge" value="large">
+                                    Large
+                                </label>
+                            </div>
+
+                            <div class="questions agePet">
+                                <p>Puppy or adult</p>
+
+                                <label>
+                                    <input type="radio" name="agePet" id="idPuppy" value="puppy">
+                                    Puppy
+                                </label>
+
+                                <label>
+                                    <input type="radio" name="agePet" id="idAdult" value="adult">
+                                    Adult
+                                </label>
+                            </div>
+
+                            <div class="questions specials">
+                                <p>Do you accept pets with special needs?</p>
+
+                                <label>
+                                    <input type="radio" name="specials" value="yesSpecials">
+                                    Yes
+                                </label>
+
+                                <label>
+                                    <input type="radio" name="specials" value="noSpecial">
+                                    No
+                                </label>
+                            </div>
+                        </fieldset>
+                    </div>
+
+                    <div class="step step-4">
+                        <h2>Step 4</h2>
+                        <h2>Routine</h2>
+                        <p>How is your routine?</p>
+
+                        <fieldset>
+                            <legend>Routine</legend>
+
+                            <div class="questions time">
+                                <p>How many hours would the pet be left alone?</p>
+
+                                <label>
+                                    <input type="radio" name="time" id="id2h" value="twoTime">
+                                    Up to 2 hours
+                                </label>
+
+                                <label>
+                                    <input type="radio" name="time" id="id4h" value="fourTime">
+                                    2-4 hours
+                                </label>
+
+                                <label for="">
+                                    <input type="radio" name="time" id="id8h" value="eightTime">
+                                    4-8 hours
+                                </label>
+
+                                <label for="">
+                                    <input type="radio" name="time" id="idMore" value="moreTime">
+
+                                    More than 8 hours
+                                </label>
+                            </div>
+
+                            <div class="questions job">
+                                <p>Do you work outside the house?</p>
+                                <label>
+                                    <input type="radio" name="job" value="outside">
+                                    Yes
+                                </label>
+
+                                <label for="">
+                                    <input type="radio" name="job" value="inside">
+                                    No
+                                </label>
+                            </div>
+
+                            <div class="questions animalBefore">
+                                <p>Have you had pets before?</p>
+                                <label>
+                                    <input type="radio" name="animalBefore" value="noAnimal">
+                                    Yes
+                                </label>
+
+                                <label for="">
+                                    <input type="radio" name="animalBefore" value="yesAnimal">
+                                    No
+                                </label>
+                            </div>
+                        </fieldset>
+                    </div>
+
+                    <div class="step step-5">
+                        
+                    </div>
+                </form>
+            </div>
         </div>
-
-        <h1 class="titulo">LOGIN</h1>
-        <p class="subti">Welcome to the website</p>
-
-        <form>
-            <div class="blocos">
-                <div class="username">
-                    <img src="src/img/user.png" alt="Usuário">
-                    <input type="text" name="nome" id="inome" placeholder="Username" required minlength="3"
-                        maxlength="30">
-                </div>
-
-                <div class="password">
-                    <img src="src/img/lock.png" alt="Cadeado">
-                    <input type="password" name="senha" id="isenha" placeholder="Password" required minlength="3"
-                        maxlength="30">
-                </div>
-            </div>
-
-            <p><a href="#">Forget password?</a></p>
-
-            <div class="botao">
-                <button class="botao">
-                    Sign in
-                </button>
-
-                <p>
-                    <a href="#">Create Account</a>
-                </p>
-            </div>
-        </form>
-
-
-
-
     </main>
 </body>
 
