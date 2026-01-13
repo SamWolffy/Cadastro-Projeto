@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="src/style.css">
     <link rel="stylesheet" href="src/progress.css">
     <link rel="stylesheet" href="src/register.css">
+    <link rel="stylesheet" href="src/input.css">
 </head>
 
 <body>
@@ -59,29 +60,53 @@
                 <form>
                     <div class="step step-1 active">
 
-                        <h2>Personal information</h2>
-                        <p>Enter your personal information to get closer to your next pet!</p>
+                        <h2 class="titulo">
+                            Personal information
+                        </h2>
+                        <p class="subtitulo">Enter your personal information to get closer to your next pet!</p>
 
 
-                        <fieldset class="formGrid">
+                        <fieldset class="formGroup">
                             <legend>Basic Details</legend>
 
-                            <label for="idName">Full name</label>
-                            <input type="text" name="name" id="idName" placeholder="Your full name" required>
+                            <div class="questions name">
+                                <label for="idName"></label>
+                                <input type="text" name="name" id="idName" placeholder="Your name" required>
+                            </div>
 
-                            <label for="idAge">Age</label>
-                            <input type="number" name="age" id="idAge" placeholder="Your age" required>
+                            <div class="questions secondName">
+                                <label for="idLastName"></label>
+                                <input type="text" name="lastName" id="idLastName" placeholder="Your last name"
+                                    required>
+                            </div>
 
-                            <label for="idEmail">Email</label>
-                            <input type="email" name="email" id="idEmail" placeholder="Your email">
+                            <div class="questions age">
+                                <label for="idAge"></label>
+                                <input type="number" name="age" id="idAge" placeholder="Your age" required>
+                            </div>
 
-                            <label for="idAddress">Address</label>
-                            <input type="text" name="address" id="idAddress" placeholder="Your address">
+                            <div class="questions email">
+                                <label for="idEmail"></label>
+                                <input type="email" name="email" id="idEmail" placeholder="Your email address">
+                            </div>
+
+                            <div class="questions state">
+                                <select id="state">
+                                    <option value="">Select state</option>
+                                </select>
+                            </div>
+
+                            <div class="questions city">
+                                <select id="city" disabled>
+                                    <option value="">Select city</option>
+                                </select>
+                            </div>
+
                         </fieldset>
 
                         <div class="actions">
                             <button class="next">
-                                Next
+                                Next step
                             </button>
                         </div>
 
@@ -92,7 +117,7 @@
                         <p>Tell us about your house.</p>
 
 
-                        <fieldset>
+                        <fieldset class="formGroup">
                             <legend>House situation</legend>
 
                             <div class="questions live">
@@ -158,22 +183,22 @@
 
                         <div class="actions">
                             <button class="next">
-                                Next
+                                Next step
                             </button>
                         </div>
 
                         <div class="actions">
                             <button class="back">
-                                Back
+                                Back step
                             </button>
                         </div>
                     </div>
 
                     <div class="step step-3">
-                        <h2>Pets preference</h2>
-                        <p>What about the pet?</p>
+                        <h2 class="titulo">Pets preference</h2>
+                        <p class="subtitulo">What about the pet?</p>
 
-                        <fieldset>
+                        <fieldset class="formGroup">
                             <legend>Adoption expectations</legend>
 
                             <div class="questions adoption">
@@ -238,22 +263,24 @@
 
                         <div class="actions">
                             <button class="next">
-                                Next
+                                Next step
                             </button>
 
                             <div class="actions">
                                 <button class="back">
-                                    Back
+                                    Back step
                                 </button>
                             </div>
                         </div>
                     </div>
 
                     <div class="step step-4">
-                        <h2>Routine</h2>
-                        <p>How is your routine?</p>
+                        <h2 class="titulo">Routine</h2>
+                        <p class="subtitulo">
+                            How is your routine?
+                        </p>
 
-                        <fieldset>
+                        <fieldset class="formGroup">
                             <legend>Routine</legend>
 
                             <div class="questions time">
@@ -309,13 +336,13 @@
 
                         <div class="actions">
                             <button class="next">
-                                Next
+                                Next step
                             </button>
                         </div>
 
                         <div class="actions">
                             <button class="back">
-                                Back
+                                Back step
                             </button>
                         </div>
                     </div>

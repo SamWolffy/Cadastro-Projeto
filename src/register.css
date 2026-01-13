@@ -15,4 +15,107 @@
 
 .progressRegister .step.active {
     display: flex;
+
+    margin-top: 50px;
+    margin-left: 10px;
 }
+
+.step.active .subtitulo {
+    color: #517381;
+    font-size: 13px;
+}
+
+.progressRegister fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 30px;
+}
+
+.progressRegister .formGroup {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.formGroup legend {
+    font-size: 17px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.questions {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.questions ::placeholder {
+   color: #517381;
+}
+
+.questions input {
+    height: 47px;
+    width: 170px;
+    padding: 0 14px;
+
+    border-radius: 6px;
+    border: 1px solid #517381;
+
+    background-color: #96d3cd;
+    font-size: 14px;
+}
+
+.questions input:hover {
+    background-color: #aeebe5;
+    color: #32738de9;
+}
+
+.questions select {
+    height: 47px;
+    width: 170px;
+    padding: 0 14px;
+
+    border-radius: 6px;
+    border: 1px solid #517381;
+
+    background-color: #96d3cd;
+    font-size: 14px;
+    color: #517381;
+}
+
+.actions .next {
+    background-color: #15536be9;
+    padding: 12px;
+    margin-top: 10px;
+    border-radius: 8px;
+    width: 120px;
+
+    color: #71c2ba;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.actions button {
+    border: none;
+}
+
+.actions .next:hover {
+    background-color: #aeebe5;
+    color: #32738de9;
+    transform: scale(1.07);
+
+}
+
+button {
+    transition: transform 0.2s ease;
+}
+
+input {
+    transition: 0.5s;
+}
+
+
+
+

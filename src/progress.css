@@ -1,18 +1,23 @@
 .progress {
     width: 350px;
     display: flex;
-    border-radius: 17px 0px 0px 17px; 
-    flex-direction: column;  
+    border-radius: 17px 0px 0px 17px;
+    flex-direction: column;
     padding: 30px;
 
     color: #71c2ba;
     background-color: #15526b;
 }
 
-.img img{
+.img img {
     width: 60px;
     border-radius: 50%;
     box-shadow: 0 0 60px 20px #62a6c161;
+    transition: 0.5s;
+}
+
+img:hover {
+    transform: scale(1.07);
 }
 
 .stepsIndicator {
@@ -42,7 +47,7 @@
     align-items: center;
     gap: 12px;
     margin-bottom: 16px;
-    
+
     color: #7f9693;
 }
 
@@ -69,12 +74,12 @@
     background-color: rgba(255, 255, 255, 0.5);
 }
 
- .number {
+.number {
     width: 35px;
     height: 35px;
 
     border-radius: 50%;
-    background-color: #335d6e;
+    background-color: #335d6ead;
     color: #7f9693;
 
     display: flex;
@@ -89,4 +94,14 @@
 .number.active {
     background-color: #024059;
     color: #71c2ba;
+}
+
+.number:hover {
+    transform: scale(1.07);
+    background-color: #97b6b1;
+    color: #024059;
+}
+
+.number{
+    transition: 0.5s;
 }
