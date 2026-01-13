@@ -6,7 +6,6 @@
     box-sizing: border-box;
 }
 
-
 body {
     background-color: #024059;
     font-family: Arial, Helvetica, sans-serif;
@@ -30,120 +29,7 @@ main {
     display: flex;
 }
 
-.progressPage {
+.registerPage {
     display: flex;
     gap: 2rem;
-}
-
-.progressLeft {
-    width: 350px;
-    display: flex;
-    border-radius: 17px 0px 0px 17px; 
-    flex-direction: column;  
-    padding: 30px;
-
-    color: #71c2ba;
-    background-color: #15526b;
-}
-
-.img img{
-    width: 60px;
-    border-radius: 50%;
-    box-shadow: 0 0 60px 20px #62a6c161;
-}
-
-.stepsIndicator {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: 18px;
-
-    padding: 0;
-    margin-top: 20px;
-}
-
-.progressLeft .stepName {
-    display: none;
-    padding: 0;
-}
-
-.progressLeft .stepName.active {
-    display: flex;
-    margin-top: 30px;
-    font-size: 22px;
-    font-weight: bolder;
-}
-
-.stepsIndicator li {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    margin-bottom: 16px;
-    
-    color: #7f9693;
-}
-
-.stepsIndicator li.active {
-    color: #71c2ba;
-    font-weight: bolder;
-}
-
-
-.stepsIndicator li:not(:last-child) .number::after {
-    content: "";
-    position: absolute;
-
-    top: 35px;
-    left: 50%;
-    transform: translateX(-50%);
-
-    width: 2px;
-    height: 25px;
-
-    margin-top: 5px;
-    margin-bottom: 5px;
-
-    background-color: rgba(255, 255, 255, 0.5);
-}
-
- .number {
-    width: 35px;
-    height: 35px;
-
-    border-radius: 50%;
-    background-color: #335d6e;
-    color: #7f9693;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    font-weight: bold;
-
-    position: relative;
-}
-
-.number.active {
-    background-color: #024059;
-    color: #71c2ba;
-}
-
-
-.progressRight {
-    flex: 1;
-}
-
-
-.progressRight .step {
-    display: flex;
-    flex-direction: column;
-    width: 300px;
-    gap: 16px;
-
-    display: none;
-    position: absolute;
-}
-
-.progressRight .step.active {
-    display: flex;
 }
