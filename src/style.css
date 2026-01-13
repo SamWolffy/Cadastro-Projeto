@@ -46,6 +46,11 @@ main {
     background-color: #15526b;
 }
 
+.img img{
+    width: 60px;
+    border-radius: 50%;
+}
+
 .stepsIndicator {
     list-style: none;
     display: flex;
