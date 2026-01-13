@@ -5,25 +5,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <!-- <link rel="stylesheet" href="src/style.css"> -->
+    <link rel="stylesheet" href="src/style.css">
 </head>
 
 <body>
     <main id="content">
-        <div id="progressPage">
-            <div id="head">
-                <h1>Logo</h1>
+        <div class="progressPage">
+            <div class="progressLeft">
+                <div id="head">
+                    <h1>Welcome!</h1>
+                    <p class="stepName active">Create Account</p>
+                    <p class="stepName">Your House</p>
+                    <p class="stepName">Adoption</p>
+                    <p class="stepName">Routine</p>
+                    <p class="stepName">Confirm</p>
+                </div>
+
+                <div id="steps">
+                    <ul class="stepsIndicator">
+                        <li class="active">
+                            <span class="number active">1</span>
+                            <span class="label">Basic Details</span>
+                        </li>
+
+                        <li>
+                            <span class="number">2</span>
+                            <span class="label">House situation</span>
+                        </li>
+
+                        <li>
+                            <span class="number">3</span>
+                            <span class="label">Adoption expectations</span>
+                        </li>
+
+                        <li>
+                            <span class="number">4</span>
+                            <span class="label">Routine</span>
+                        </li>
+
+                        <li>
+                            <span class="number">5</span>
+                            <span class="label">Confirm</span>
+                        </li>
+                    </ul>
+                </div>
             </div>
 
-            <div id="progress">
+            <div class="progressRight">
                 <form>
                     <div class="step step-1 active">
-                        <h2>Step 1</h2>
+
                         <h2>Personal information</h2>
                         <p>Enter your personal information to get closer to your next pet!</p>
 
 
-                        <fieldset>
+                        <fieldset class="formGrid">
                             <legend>Basic Details</legend>
 
                             <label for="idName">Full name</label>
@@ -39,10 +75,15 @@
                             <input type="text" name="address" id="idAddress" placeholder="Your address">
                         </fieldset>
 
+                        <div class="actions">
+                            <button class="next">
+                                Next
+                            </button>
+                        </div>
+
                     </div>
 
                     <div class="step step-2">
-                        <h2>Step 2</h2>
                         <h2>Your home</h2>
                         <p>Tell us about your house.</p>
 
@@ -110,10 +151,21 @@
                                 </label>
                             </div>
                         </fieldset>
+
+                        <div class="actions">
+                            <button class="next">
+                                Next
+                            </button>
+                        </div>
+
+                        <div class="actions">
+                            <button class="back">
+                                Back
+                            </button>
+                        </div>
                     </div>
 
                     <div class="step step-3">
-                        <h2>Step 3</h2>
                         <h2>Pets preference</h2>
                         <p>What about the pet?</p>
 
@@ -179,10 +231,21 @@
                                 </label>
                             </div>
                         </fieldset>
+
+                        <div class="actions">
+                            <button class="next">
+                                Next
+                            </button>
+
+                            <div class="actions">
+                                <button class="back">
+                                    Back
+                                </button>
+                            </div>
+                        </div>
                     </div>
 
                     <div class="step step-4">
-                        <h2>Step 4</h2>
                         <h2>Routine</h2>
                         <p>How is your routine?</p>
 
@@ -209,7 +272,6 @@
 
                                 <label for="">
                                     <input type="radio" name="time" id="idMore" value="moreTime">
-
                                     More than 8 hours
                                 </label>
                             </div>
@@ -240,15 +302,29 @@
                                 </label>
                             </div>
                         </fieldset>
+
+                        <div class="actions">
+                            <button class="next">
+                                Next
+                            </button>
+                        </div>
+
+                        <div class="actions">
+                            <button class="back">
+                                Back
+                            </button>
+                        </div>
                     </div>
 
                     <div class="step step-5">
-                        
+
                     </div>
                 </form>
             </div>
         </div>
     </main>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
