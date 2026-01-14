@@ -84,6 +84,7 @@
     background-color: #96d3cd;
     font-size: 14px;
     color: #517381;
+    margin-top: 15px;
 }
 
 .actions .next {
@@ -100,17 +101,14 @@
 
 .actions button {
     border: none;
+    transition: transform 0.2s ease;
+    cursor: pointer;
 }
 
 .actions .next:hover {
     background-color: #aeebe5;
     color: #32738de9;
     transform: scale(1.07);
-
-}
-
-button {
-    transition: transform 0.2s ease;
 }
 
 input {

@@ -1,0 +1,118 @@
+.progressRegister fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 10px;
+}
+
+.groupRadio {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+    width: 360px;
+    
+}
+
+.groupRadio label {
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.2s ease;
+    user-select: none;
+
+    height: 40px;
+    width: 170px;
+    padding: 0 14px;
+
+    border-radius: 6px;
+    border: 1px solid #517381;
+
+    background-color: #96d3cd;
+    font-size: 14px;
+    color: #15536be9;
+}
+
+.groupRadio input[type="radio"]:checked+label {
+    background-color: #7c5cff;
+    color: white;
+    border-color: #7c5cff;
+}
+
+.groupRadio label:hover {
+    border-color: #7c5cff;
+}
+
+
+.step-2 input[type="radio"] {
+    display: none;
+}
+
+.groupRadio label {
+    padding: 12px 18px;
+    border: 2px solid #517381;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.2s ease;
+    user-select: none;
+}
+
+.groupRadio input[type="radio"]:checked+label {
+    background-color: #7c5cff;
+    color: white;
+    border-color: #7c5cff;
+}
+
+.groupRadio label:hover {
+    border-color: #7c5cff;
+}
+
+.groupRadio .conditional {
+    /* display: none; */
+}
+
+.questions,
+.conditional {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.options {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.actions .back {
+    background-color: #15536be9;
+    padding: 12px;
+    margin-top: 10px;
+    border-radius: 8px;
+    width: 120px;
+
+    margin-left: 50px;
+    color: #71c2ba;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.actions button {
+    border: none;
+    transition: transform 0.2s ease;
+    cursor: pointer;
+}
+
+.actions .back:hover {
+    background-color: #aeebe5;
+    color: #32738de9;
+    transform: scale(1.07);
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+    margin-top:px;
+}
+
+.progressRegister .step-2 {
+    gap: 4px;
+}

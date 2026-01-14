@@ -89,6 +89,8 @@ img:hover {
     font-weight: bold;
 
     position: relative;
+
+    cursor: default;
 }
 
 .number.active {

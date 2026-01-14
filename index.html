@@ -4,12 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Adoption</title>
     <link rel="stylesheet" href="src/style.css">
     <link rel="stylesheet" href="src/progress.css">
-    <link rel="stylesheet" href="src/register.css">
+    <link rel="stylesheet" href="src/register-step1.css">
+    <link rel="stylesheet" href="src/register-step2.css">
     <link rel="stylesheet" href="src/input.css">
-    
+
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
 </head>
@@ -61,7 +62,7 @@
 
             <div class="progressRegister">
                 <form>
-                    <div class="step step-1 active">
+                    <div class="step step-1 ">
 
                         <h2 class="titulo">
                             Personal information
@@ -79,13 +80,12 @@
 
                             <div class="questions secondName">
                                 <label for="idLastName"></label>
-                                <input type="text" name="lastName" id="idLastName" placeholder="Last name"
-                                    required>
+                                <input type="text" name="lastName" id="idLastName" placeholder="Last name" required>
                             </div>
 
                             <div class="questions age">
                                 <label for="idAge"></label>
-                                <input type="number" name="age" id="idAge" placeholder="Age" required>
+                                <input type="date" name="age" id="idAge" placeholder="Birthday" required>
                             </div>
 
                             <div class="questions email">
@@ -115,72 +115,53 @@
 
                     </div>
 
-                    <div class="step step-2">
+                    <div class="step step-2 active">
                         <h2>Your home</h2>
                         <p>Tell us about your house.</p>
-
 
                         <fieldset class="formGroup">
                             <legend>House situation</legend>
 
-                            <div class="questions live">
-                                <p>Do you live alone or with others?</p>
+                            <div class="groupRadio">
+                                <div class="questions live">
+                                    <p>Do you live alone or with others?</p>
 
-                                <label for="idAlone">
                                     <input type="radio" name="live" id="idAlone" value="alone">
-                                    I live alone
-                                </label>
+                                    <label for="idAlone">I live alone</label>
 
-
-                                <label for="idOthers">
                                     <input type="radio" name="live" id="idOthers" value="others">
-                                    I live with others
-                                </label>
+                                    <label for="idOthers">I live with others</label>
+                                </div>
 
-                            </div>
+                                <div class="questions house">
+                                    <p>Do you live in a house or apartment?</p>
 
-
-                            <div class="questions house">
-                                <p>Mora em casa ou apartamento?</p>
-
-
-                                <label>
                                     <input type="radio" name="living" id="idHouse" value="house">
-                                    House
-                                </label>
+                                    <label for="idHouse">House</label>
 
-                                <label>
                                     <input type="radio" name="living" id="idApartment" value="apartment">
-                                    Apartment
-                                </label>
-                            </div>
+                                    <label for="idApartment">Apartment</label>
+                                </div>
 
-                            <div id="yardBlock" class="conditional">
-                                <p>Do you have a yard?</p>
+                                <div id="yardBlock" class="conditional">
+                                    <p>Do you have a yard?</p>
 
-                                <label>
-                                    <input type="radio" name="yard" value="yesYard">
-                                    Yes
-                                </label>
+                                    <input type="radio" name="yard" id="idYesYard" value="yesYard">
+                                    <label for="idYesYard">Yes</label>
 
-                                <label>
-                                    <input type="radio" name="yard" value="noYard">
-                                    No
-                                </label>
-                            </div>
+                                    <input type="radio" name="yard" id="idNoYard" value="noYard">
+                                    <label for="idNoYard">No</label>
+                                </div>
 
-                            <div class="questions protection conditional">
-                                <p>Do you have screens on the windows?</p>
+                                <div class="questions protection conditional">
+                                    <p>Do you have screens?</p>
 
-                                <label>
-                                    <input type="radio" name="screens" value="yesScreens">
-                                    Yes
-                                </label>
+                                    <input type="radio" name="screens" id="idYesScreens" value="yesScreens">
+                                    <label for="idYesScreens">Yes</label>
 
-                                <label>
-                                    <input type="radio" name="screens" value="noScreens">
-                                    No
-                                </label>
+                                    <input type="radio" name="screens" id="idNoScreens" value="noScreens">
+                                    <label for="idNoScreens">No</label>
+                                </div>
                             </div>
                         </fieldset>
 
@@ -188,9 +169,7 @@
                             <button class="next">
                                 Next step
                             </button>
-                        </div>
 
-                        <div class="actions">
                             <button class="back">
                                 Back step
                             </button>
