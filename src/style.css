@@ -7,7 +7,7 @@
 }
 
 body {
-    background-color: #024059;
+    background-color: var(--blue-dark);
     font-family: 'Inter', sans-serif;
 
     display: flex;
@@ -17,8 +17,8 @@ body {
 }
 
 main {
-    background-color: #71c2ba;
-    color: #024059;
+    background-color: var(--pink-soft);
+    color: var(--text-dark);
     box-shadow: 0 0 60px 20px rgba(0, 0, 0, 0.168);
     border-radius: 20px;
 

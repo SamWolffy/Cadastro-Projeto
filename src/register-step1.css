@@ -16,12 +16,16 @@
 .progressRegister .step.active {
     display: flex;
 
-    margin-top: 50px;
     margin-left: 10px;
 }
 
+.progressRegister .step-1 {
+    margin-top: 50px;
+}
+
+
 .step.active .subtitulo {
-    color: #517381;
+    color: var(--purple-soft);
     font-size: 13px;
 }
 
@@ -52,7 +56,7 @@
 }
 
 .questions ::placeholder {
-   color: #517381;
+   color: var(--pink-soft);
 }
 
 .questions input {
@@ -61,16 +65,21 @@
     padding: 0 14px;
 
     border-radius: 6px;
-    border: 1px solid #517381;
+    border: 1px solid var(--purple-dark);
 
-    background-color: #96d3cd;
+    background-color: var(--purple-soft);
     font-size: 14px;
-    color: #15536be9;
+    color: var(--pink-soft);
 }
 
 .questions input:hover {
-    background-color: #aeebe5;
-    color: #32738de9;
+    background-color: var(--pink-soft);
+    color: var(--purple-soft);
+}
+
+.questions ::placeholder:hover {
+    background-color: var(--pink-soft);
+    color: var(--purple-soft);
 }
 
 .questions select {
@@ -79,22 +88,28 @@
     padding: 0 14px;
 
     border-radius: 6px;
-    border: 1px solid #517381;
+    border: 1px solid var(--purple-dark);
 
-    background-color: #96d3cd;
+    background-color: var(--purple-soft);
     font-size: 14px;
-    color: #517381;
+    color: var(--pink-soft);
     margin-top: 15px;
+
+    transition: 0.5s;
 }
 
+.questions select:hover {
+    background-color: var(--pink-soft);
+    color: var(--purple-soft);
+}
 .actions .next {
-    background-color: #15536be9;
+    background-color: var(--text-dark);
     padding: 12px;
     margin-top: 10px;
     border-radius: 8px;
     width: 120px;
 
-    color: #71c2ba;
+    color: var(--text-muted);
     font-size: 15px;
     font-weight: bold;
 }
@@ -105,9 +120,9 @@
     cursor: pointer;
 }
 
-.actions .next:hover {
-    background-color: #aeebe5;
-    color: #32738de9;
+.actions button:hover {
+    background-color: var(--text-muted);
+    color: var(--text-dark);
     transform: scale(1.07);
 }
 

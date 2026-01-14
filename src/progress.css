@@ -5,14 +5,14 @@
     flex-direction: column;
     padding: 30px;
 
-    color: #71c2ba;
-    background-color: #15526b;
+    color: var(--pink-soft);
+    background-color: var(--text-dark);
 }
 
 .img img {
     width: 60px;
     border-radius: 50%;
-    box-shadow: 0 0 60px 20px #62a6c161;
+    box-shadow: 0 0 60px 10px var(--purple-soft);
     transition: 0.5s;
 }
 
@@ -48,11 +48,11 @@ img:hover {
     gap: 12px;
     margin-bottom: 16px;
 
-    color: #7f9693;
+    color: var(--text-muted);
 }
 
 .stepsIndicator li.active {
-    color: #71c2ba;
+    color: var(--pink-soft);
     font-weight: bolder;
 }
 
@@ -79,8 +79,8 @@ img:hover {
     height: 35px;
 
     border-radius: 50%;
-    background-color: #335d6ead;
-    color: #7f9693;
+    background-color: var(--text-muted);
+    color: var(--text-dark);
 
     display: flex;
     align-items: center;
@@ -94,14 +94,14 @@ img:hover {
 }
 
 .number.active {
-    background-color: #024059;
-    color: #71c2ba;
+    background-color: var(--blue-dark);
+    color: var(--pink-soft);
 }
 
 .number:hover {
     transform: scale(1.07);
-    background-color: #97b6b1;
-    color: #024059;
+    background-color: var(--pink-soft);
+    color: var(--purple-dark);
 }
 
 .number{
